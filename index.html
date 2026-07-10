@@ -1,20 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Michaela V. Garcia Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michaela Garcia | Marketing Specialist Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f7f7f7;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    padding:60px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.about{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+}
+
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.portfolio-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.portfolio-card:hover{
+    transform:translateY(-5px);
+}
+
+.portfolio-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.portfolio-info{
+    padding:20px;
+}
+
+.portfolio-info h3{
+    margin-bottom:10px;
+}
+
+.contact{
+    text-align:center;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
 </head>
+
 <body>
-  <h1>Michaela V. Garcia</h1>
-  <p>Marketing Specialist | Graphic Designer | Website Content Editor</p>
 
-  <h2>About Me</h2>
-  <p>
-    Creative marketing professional with experience in graphic design,
-    social media marketing, SEO optimization, website management,
-    and content creation.
-  </p>
+<header>
+    <h1>Michaela Garcia</h1>
+    <p>Marketing Specialist • Graphic Designer • Website Editor</p>
+</header>
 
-  <h2>Contact</h2>
-  <p>Email: michaelav.garcia@yahoo.com</p>
+<section>
+<div class="container">
+    <div class="section-title">
+        <h2>About Me</h2>
+    </div>
+
+    <div class="about">
+        <p>
+            Creative marketing professional with experience in graphic design,
+            social media marketing, SEO optimization, website management,
+            content creation, poster design, catalog design, and video editing.
+        </p>
+    </div>
+</div>
+</section>
+
+<section>
+<div class="container">
+
+    <div class="section-title">
+        <h2>Portfolio</h2>
+    </div>
+
+    <div class="portfolio-grid">
+
+        <div class="portfolio-card">
+            <img src="product-shoot.jpg.webp" alt="Product Photography">
+            <div class="portfolio-info">
+                <h3>Product Photography</h3>
+                <p>Professional product photography for marketing campaigns.</p>
+            </div>
+        </div>
+
+        <div class="portfolio-card">
+            <img src="catalog-design.jpg.webp" alt="Catalog Design">
+            <div class="portfolio-info">
+                <h3>Catalog Design</h3>
+                <p>Product catalogs and corporate marketing materials.</p>
+            </div>
+        </div>
+
+        <div class="portfolio-card">
+            <img src="poster-design.jpg.webp" alt="Poster Design">
+            <div class="portfolio-info">
+                <h3>Poster Design</h3>
+                <p>Social media and advertising poster creation.</p>
+            </div>
+        </div>
+
+        <div class="portfolio-card">
+            <img src="poster-design2.jpg" alt="Marketing Design">
+            <div class="portfolio-info">
+                <h3>Marketing Design</h3>
+                <p>Creative visual campaigns for branding and promotions.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<section class="contact">
+<div class="container">
+    <h2>Contact</h2>
+    <br>
+    <p>Email: michaelav.garcia@yahoo.com</p>
+</div>
+</section>
+
+<footer>
+    © 2026 Michaela Garcia Portfolio
+</footer>
+
 </body>
 </html>
